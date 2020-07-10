@@ -2,6 +2,7 @@ import pygame
 import sys
 import random
 import pygame_menu
+import math
 
 pygame.init()
 bg_image = pygame.image.load('logo.jpg')
