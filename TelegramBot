@@ -12,7 +12,7 @@ def start_message(message):
 
 @bot.message_handler(content_types=['text'])
 def send_text(message):
-    if message.text.lower() == 'привет' or message.text.lower() == 'привет пидарок':
+    if message.text.lower() == 'привет' or message.text.lower() == 'Здравствуй':
         bot.send_message(message.chat.id, 'Привет, мой создатель')
     elif message.text.lower() == 'пока':
         bot.send_message(message.chat.id, 'Прощай, создатель')
@@ -20,13 +20,6 @@ def send_text(message):
         bot.send_message(message.chat.id, 'хорошо, у вас как?')
     elif message.text.lower() == 'что делаешь?' or message.text.lower() == 'чем занят?':
         bot.send_message(message.chat.id, 'переписываюсь с вами')
-    elif message.text.lower() == 'что такое любить?':
-        bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAIKsF7E5rchfR2k301z43Cd4xn8dnRwAAI5AAMO3DgB4qDnnDhGNmQZBA')
-
-
-@bot.message_handler(content_types=['sticker'])
-def sticker_id(message):
-    print(message)
 
 
 bot.polling()
