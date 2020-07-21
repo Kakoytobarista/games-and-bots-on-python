@@ -19,10 +19,7 @@ def send_text(message):
     elif message.text.lower() == 'как дела?' or message.text.lower() == 'как сам?':
         bot.send_message(message.chat.id, 'хорошо, у вас как?')
     elif message.text.lower() == 'что делаешь?' or message.text.lower() == 'чем занят?':
-        bot.send_message(message.chat.id, 'переписываюсь с вами')
-    elif message.text.lower() == 'что такое любить?':
-        bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAIKsF7E5rchfR2k301z43Cd4xn8dnRwAAI5AAMO3DgB4qDnnDhGNmQZBA')
-
+        bot.send_message(message.chat.id, 'переписываюсь с вами'
 
 @bot.message_handler(content_types=['sticker'])
 def sticker_id(message):
