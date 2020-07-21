@@ -21,9 +21,4 @@ def send_text(message):
     elif message.text.lower() == 'что делаешь?' or message.text.lower() == 'чем занят?':
         bot.send_message(message.chat.id, 'переписываюсь с вами'
 
-@bot.message_handler(content_types=['sticker'])
-def sticker_id(message):
-    print(message)
-
-
 bot.polling()
