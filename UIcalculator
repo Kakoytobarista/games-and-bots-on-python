@@ -27,6 +27,7 @@ def calculate():
     calc.delete(0, tk.END)
     calc.insert(0, eval(value))
 
+
 def clear():
     calc.delete(0, tk.END)
     calc.insert(0, 0)
